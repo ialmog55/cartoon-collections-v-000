@@ -9,7 +9,7 @@ def roll_call_dwarves(dwarves)
 
 def summon_captain_planet(array)
   array.map do |name|
-    return "#{name.capitalize}!"
+    name.capitalize + "!"
 
   end
 
