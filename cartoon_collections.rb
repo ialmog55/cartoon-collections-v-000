@@ -23,7 +23,12 @@ def long_planeteer_calls(calls)
   end
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(array)
+  cheeses=array.grep(^(cheddar|gouda|camembert)$)
+  if cheeses.length > 0
+    cheeses[0]
+  else
+    nil
+  end
   cheese_types = ["cheddar", "gouda", "camembert"]
 end
