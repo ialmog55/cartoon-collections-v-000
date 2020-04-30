@@ -24,7 +24,7 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(array)
-  cheeses=array.grep(^(cheddar|gouda|camembert)$)
+  cheeses=array.grep(/^(cheddar|gouda|camembert)$/)
   if cheeses.length > 0
     cheeses[0]
   else
